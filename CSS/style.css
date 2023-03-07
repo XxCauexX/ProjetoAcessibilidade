@@ -1,0 +1,329 @@
+:root {
+    --body-bg-left: #ffffff;
+    --body-bg-right: #ffffff;
+    --form-bg: #fff;
+    --form-h1: #000000;
+    --font-login: #9f9a12;
+    --font-p: #a3a3a3;
+    --hover-bnt: #9f9a12;
+    --botaoEfoter: #000000;
+    --labelCor: #000000;
+}
+
+.dark-mode:root {
+    --body-bg-left: #231041;
+    --body-bg-right: #231041;
+    --body-bg: #231041;
+    --form-bg: #2B0E59;
+    --form-h1: #ffffff;
+    --font-login: #000000;
+    --fontP: #FDFDFD;
+    --font-p: #a3a3a3;
+    --hover-bnt: #0023be;
+    --botaoEfoter: #000000;
+    --labelCor: #FDFDFD;
+}
+
+@media screen and (min-width: 992px) {
+    * {
+        font-family: 'Concert One', cursive;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .access-button {
+        width: 45%!important;
+        border-radius: 28px!important;
+        border: 6px solid #000000!important;
+        background-color: #000000;
+    }
+    
+    .access-button:hover {
+        width: 70%!important;
+        background-color: #202530!important;
+        transition: 1s;
+    }
+    
+    /*
+    *parte esquerda da página 
+    */
+    
+    #card-login {
+        display: flex;
+        width: 100vw;
+        height: 94vh; 
+        background-color: var(--body-bg);
+        background-image: linear-gradient(to right, var(--body-bg-left), var(--body-bg-right));
+    }
+    
+    #circulo {
+        position: absolute;
+        width: 300px;
+    }
+    
+    #p {
+        z-index: 0;
+        position: absolute;
+        top: 660px;
+        left: 190px;
+        width: 300px;
+    }
+    
+    #left-login {
+        float: left;
+        width: 60%;
+        height: 90%;
+    }
+    
+    #retanguloLogin {
+        position: relative;
+        display: flex;
+        width: 64vh;
+        height: 40vw;
+        left: 48%;
+        top: 50%;
+        transform: translate(-48%, -48%);
+        background-color: var(--form-bg);
+        box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    
+    #retanguloLogin img{
+        z-index: -1;
+    }
+    
+    #formLogin {
+        position:absolute;
+        font-size: 12px;
+        background-color: var(--form-bg);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+    
+    form {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    form > h1,p {
+        padding: 10px;
+    }
+    
+    form > h1 {
+        color: var(--form-h1);
+        font-family: 'Concert One', cursive;
+        font-size: 4.5vh;
+    }
+    
+    #LofinF {
+        font-family: 'Concert One', cursive;
+        color: var(--font-login);
+    }
+    
+    form > p {
+        color: var(--font-p);
+        font-size: 3vh;
+    }
+    
+    form > label {
+        display: block;
+    }
+    
+    #campoP {
+        height: 5vw;
+        width: 45vh;
+        margin-top: 40px;
+    }
+    
+    .campo {
+        display: block;
+        position: static;
+        margin-top: 30x;
+        width: 100%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 40px;
+        margin: 5px 0px;
+        color: var(--fontP);
+    }
+    
+    .campo img {
+        z-index: 1;
+        position: relative;
+        float: right;
+        top: -25px;
+        left: -342px;
+    }
+    
+    .campo label {
+        position: relative;
+        font-size: 2.5vh;
+        top: -15px;
+    }
+    
+    .campo input {
+        position: static;
+        z-index: 0;
+        font-size: 2vh;
+        width: 100%;
+        border-width: 1px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 5px;
+    }
+    
+    .campo:hover {
+        width: 100%;
+        height: 40px;
+    }
+    
+    #btnSubmit input {
+        font-family: 'Concert One', cursive;
+        font-size: large;
+        display: flex;
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        height: 46.23px;
+        color:rgb(255, 255, 255);
+        background-color: var(--botaoEfoter);
+        margin-top: 20vh;
+        border: none;
+    }
+    
+    #btnSubmit input:hover {
+        background-color: var(--hover-bnt);
+        cursor: pointer;
+        font-size: 35px;
+        transition: 0.5s; 
+    }
+    
+    /*
+    *parte direita da página 
+    */
+    
+    #right-login {
+        float: left;
+        width: 40%;
+        height: 90%;
+    }
+    
+    #poligono {
+        position: relative;
+        display: flex;
+        left: 10%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        margin-top: 10vw;
+        color: var(--form-bg);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 700px;   
+        font-size: 3vh;
+    }
+    
+    #poligono img {
+        height: 25vw;
+    }
+    
+    #poligono div {
+        position: absolute;
+    }
+    
+    #poligono p {   
+        font-family: 'Concert One', cursive;
+        position: static;
+        top: 420px;
+        left: 100px;
+        color: var(--fontP);
+    }
+    
+    #PlataformaF {
+        font-family: 'Concert One', cursive;
+        font-size: 5vh;
+    }
+    
+    #rodape {
+        position: absolute;
+        z-index: 1;
+        clear: both;
+        width: 100%;
+        height: 6vh;
+        left: 0px;
+        background: var(--botaoEfoter);
+    }
+    
+    /*
+    *botão de modo escuro
+    */
+    
+    #escuro {
+        position: fixed;
+        display: block;
+        padding-right: 13px;
+        float: right!important;
+        top: 20%;
+        left: 94%;
+    }
+    
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+      
+    .label {
+        background-color: #111;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        position: relative;
+        height: 26px;
+        width: 50px;
+        transform: scale(1.5);  
+    }
+      
+    .label .ball {
+        background-color: #5c6a95;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 22px;
+        width: 22px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+      
+    .checkbox:checked + .label .ball {
+        transform: translateX(24px);
+    }
+      
+    .fa-moon {
+        color: #b6bad6;
+    }
+      
+    .fa-sun {
+        color: #f3a412;
+    }
+}    
