@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/e7f249e71a563eed9c495835657eb9c2?family=Poetsen+One" rel="stylesheet" type="text/css"/>
+    <title>Pagina de Login</title>
+</head>
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <div id="card-login">
+        <img src="Images/Ellipse22Dark.svg" alt="circulo roxo" id="circulo">
+        <img src="Images/PolygonDark.svg" alt="poligono roxo" id="p">
+        <div id="left-login">
+            <div id="retanguloLogin">
+                <div id="formLogin">
+                    <form action="" method="get">
+                        <h1>Bem vindo ao <font id="LofinF">LOGIN</font></h1>
+                        <p>Preencha os dados do login para acessar</p>
+                        <div id="campoP">
+                            <div class="campo">
+                                <label for="usuario">Usúario</label> 
+                                <input type="text" id="usuario" name="fname" placeholder="Nome de Usúario"> <BR>
+                            </div>
+                            <div class="campo">
+                                <label for="senha">Senha</label> <br>
+                                <input type="password" id="fname" name="senha" placeholder="Digite sua Senha">
+                            </div> 
+                        </div>
+                        <div id="btnSubmit">
+                            <input type="submit" value="ENTRAR">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="right-login">
+            <div id="poligono">
+                <img src="Images/Polygon2Dark.svg" alt="poligono preto">
+                <div>
+                    <p>Faça o login em nossa <br> <font id="PlataformaF">Plataforma</font></p>
+                </div>
+            </div>
+            <div id="escuro">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+            </div>          
+        </div>
+    </div>
+    <div id="rodape">  
+    </div>
+    <script src="js/darkmode.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
